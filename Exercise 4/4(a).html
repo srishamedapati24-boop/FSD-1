@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Selectors</title>
+<style>
+p {
+    color: blue;
+}
+#title {
+    color: red;
+}
+.highlight {
+    background-color: yellow;
+}
+h1, h2 {
+    font-family: Arial;
+}
+* {
+    box-sizing: border-box;
+}
+div p {
+    color: green;
+}
+div > p {
+    font-weight: bold;
+}
+h2 + p {
+    color: purple;
+}
+h2 ~ p {
+    text-decoration: underline;
+} 
+a:hover {
+    color: red;
+}
+p::first-letter {
+    font-size: 30px;
+    color: orange;
+}
+input[type="text"] {
+    border: 2px solid blue;
+}
+</style>
+</head>
+<body>
+<h1 id="title">CSS Selectors</h1>
+<h2>Simple Selectors</h2>
+<p>Element selector</p>
+<p class="highlight">Class selector</p>
+<h2>Combinator Selectors</h2>
+<div>
+    <p>Descendant and Child selector</p>
+</div>
+<h2>Sibling Example</h2>
+<p>Adjacent sibling</p>
+<p>General sibling</p>
+<h2>Pseudo-Class</h2>
+<a href="#">Hover over this link</a>
+<h2>Pseudo-Element</h2>
+<p>This demonstrates first letter selector.</p>
+<h2>Attribute Selector</h2>
+<input type="text" placeholder="Enter name">
+</body>
+</html>

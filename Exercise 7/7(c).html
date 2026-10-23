@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Object</title>
+</head>
+<body>
+<h2>Array Object</h2>
+<script>
+    let fruits = ["Apple", "Banana", "Mango"];
+    // Property
+    document.write("Array: " + fruits + "<br>");
+    document.write("Length: " + fruits.length + "<br><br>");
+    // Methods
+    fruits.push("Orange");
+    document.write("After push(): " + fruits + "<br>");
+    fruits.pop();
+    document.write("After pop(): " + fruits + "<br>");
+    fruits.unshift("Grapes");
+    document.write("After unshift(): " + fruits + "<br>");
+    fruits.shift();
+    document.write("After shift(): " + fruits + "<br>");
+    document.write("Index of Mango: " +
+                   fruits.indexOf("Mango") + "<br>");
+    document.write("Joined Array: " +
+                   fruits.join(", "));
+</script>
+</body>
+</html>
